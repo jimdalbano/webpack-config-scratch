@@ -1,0 +1,19 @@
+@import './index';
+
+.content {
+  padding: 1.25em;
+  margin-bottom: 2em;
+}
+
+.one {
+  composes: content;
+
+  font-family: 'Montserrat';
+  border: 1px solid blue;
+}
+
+.two {
+  composes: content;
+
+  border: 1px solid green;
+}

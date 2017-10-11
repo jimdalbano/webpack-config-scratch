@@ -1,0 +1,101 @@
+{
+  "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "node scripts/clean.js",
+    "start": "cp ./src/index.html ./build/index.html && ./node_modules/webpack/bin/webpack.js --config ./config/webpack.config.dev.js --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "7.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "css-loader": "^0.28.4",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-loader": "1.7.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.1.0",
+    "extract-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "0.11.2",
+    "fs-extra": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-flexbugs-fixes": "3.0.0",
+    "postcss-loader": "2.0.6",
+    "react-dev-utils": "^3.0.1",
+    "react-error-overlay": "^1.0.8",
+    "sass-loader": "^6.0.6",
+    "style-loader": "0.18.2",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-webpack-plugin": "^0.8.0",
+    "url-loader": "^0.5.9",
+    "webpack": "3.0.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "stage-2"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "extends": "airbnb",
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "arrow-body-style": [
+        "warn",
+        "as-needed",
+        {
+          "requireReturnForObjectLiteral": true
+        }
+      ],
+      "import/no-extraneous-dependencies": "off",
+      "import/no-unresolved": "off",
+      "import/extensions": "off",
+      "react/forbid-prop-types": "off"
+    }
+  },
+  "borwserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "comment-empty-line-before": null
+    }
+  }
+}

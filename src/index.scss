@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-Black.otf');
+}
+
+body {
+
+  span {
+    /* PostCSS will turn this into
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    */
+    display: flex;
+  }
+
+}
